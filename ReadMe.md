@@ -9,4 +9,8 @@ In this application of api realisation is parsed in to documentation. So we alwa
 Run application in one process(you may use ide or standart java run jar syntax) then run 'pay/IntegrationTest' from ide.
 
 Application will apply transfeer request to accounts in database and you will get error response when balance is not enough.
-And we will not throw exception if customer sends money to incorrect recipient id ;) Just a joke, but here it works this way, just like in blockchain and may be adjusted.
+
+## Restrictions
+We will not throw exception if customer sends money to incorrect recipient id ;) Just a joke, but here it works this way, just like in blockchain and may be adjusted.
+
+Also Validation of parameters does not happen. Just because " keep it simple" requirement. So one of the way to implement it is using standart validation api and hibernate validator.
