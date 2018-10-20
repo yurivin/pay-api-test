@@ -13,4 +13,4 @@ Application will apply transfeer request to accounts in database and you will ge
 ## Restrictions
 We will not throw exception if customer sends money to incorrect recipient id. Here it works this way, just like in blockchain and may be adjusted.
 
-Also Validation of parameters does not happen. Just because "keep it simple" requirement. So one of the way to implement validation is using standart validation api and hibernate validator.
+Also Validation of parameters does not happen. Just because "keep it simple" requirement. So one of the way to implement validation is using standart validation api realisation.
