@@ -2,7 +2,7 @@
 
 * Run as standart java application. NO need for container. Main class is `Application.java`
 * Api swagger documentaion http://localhost:8080/broker/api-doc
-In this application of api realisation is parsed in to documentation. So we always will have documentation up to date
+In this application api realisation is parsed in to documentation. So we always have documentation up to date
 
 
 ## Testing
