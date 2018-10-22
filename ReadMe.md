@@ -15,4 +15,4 @@ We will not throw exception if customer sends money to incorrect recipient id. H
 
 Also Validation of parameters does not happen. Just because "keep it simple" requirement. So one of the way to implement validation is using standart validation api realisation.
 
-Versioning of balance changes and transactional feature also not implemented because of "kepp it simple requirement".
+Versioning of balance changes and transactional feature also not implemented because of "keep it simple requirement".
