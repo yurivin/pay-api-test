@@ -10,6 +10,10 @@ import static org.hamcrest.core.IsEqual.equalTo;
 
 public class IntegrationTest {
 
+    /**
+     * When application lunched this test will work only ones, becuse account balances will be changed to not expected values
+     *
+      */
     @Test
     public void test() {
 

@@ -8,9 +8,9 @@ In this application api realisation is parsed in to documentation. So we always 
 
 ## Testing
 Run application in one process(you may use ide or standart java run jar syntax) then run 'pay/IntegrationTest' from ide.
+When application lunched this test will work only ones, becuse account balances will be changed to not expected values
 
 Application will apply transfeer request to accounts in database and you will get error response when balance is not enough.
-
 
 Also Versioning of account changes implemented to avoid race conditions and disable "double spent" problem.
 
