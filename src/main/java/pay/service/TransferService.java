@@ -31,7 +31,7 @@ public class TransferService {
             ack = updateAccounts(transfer, con, rs);
         } catch (SQLException e) {
             e.printStackTrace();
-            ack = new TransferAck(false, "Error writing in to Databse. Maybe because of cuncurrent balance changes");
+            ack = new TransferAck(false, "Error writing in to Database. Maybe because of concurrent balance changes");
         }
         return ack;
     }
