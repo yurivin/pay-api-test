@@ -43,7 +43,7 @@ public class TransferService {
             BigDecimal senderBalance = rs.getBigDecimal(2);
             int versionSender = rs.getInt(3);
             if(senderBalance.compareTo(transfer.getAmount()) >=  0) {
-                updateAccount(con, senderBalance.subtract(transfer.getAmount()), transfer.getSender(), versionSender);
+                updateAccount(con, senderBalance.subtract(transfer.getAmount()), transfer.getSender(), versionSender++);
                 selectAccount.setLong(1, transfer.getRecipient());
                 updateRecipient(transfer, con);
                 con.commit();
@@ -63,7 +63,7 @@ public class TransferService {
         if(rs.next()) {
             BigDecimal receiverBalance = rs.getBigDecimal(2);
             int versionRecipient = rs.getInt(3);
-            updateAccount(con, receiverBalance.add(transfer.getAmount()), transfer.getRecipient(), versionRecipient);
+            updateAccount(con, receiverBalance.add(transfer.getAmount()), transfer.getRecipient(), versionRecipient++);
         }
     }
 
