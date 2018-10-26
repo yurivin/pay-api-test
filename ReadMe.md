@@ -20,3 +20,10 @@ We will not throw exception if customer sends money to incorrect recipient id. H
 Also Validation of parameters does not happen. Just because "keep it simple" requirement. So one of the way to implement validation is using standart validation api realisation.
 
 Double spend condition tries to happen sender wil not receive any error. Just one of money transfer transactions will be executed.
+
+## Known problems
+- Low test coverage
+- Only integration tests
+- Unhappy cases not tested
+- It is allowed to make payment with negative amount
+
